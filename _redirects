@@ -1,0 +1,2 @@
+/blog/*   /guide/:splat   301
+/articles/*  /guide/:splat  301

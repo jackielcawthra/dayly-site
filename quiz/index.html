@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Dayly setup quiz — the questions we would ask</title>
+<meta name="description" content="The intake we use to set up a household: who lives here, when each is here, what the house is, and who does what. Twenty minutes, and it writes you a setup brief.">
+<link rel="canonical" href="https://www.dayly.app/quiz/">
+<meta name="theme-color" content="#f4f0e9" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#0c0b0a" media="(prefers-color-scheme:dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dayly">
+<meta property="og:title" content="The Dayly setup quiz — the questions we would ask">
+<meta property="og:description" content="The intake we use to set up a household: who lives here, when each is here, what the house is, and who does what. Twenty minutes, and it writes you a setup brief.">
+<meta property="og:url" content="https://www.dayly.app/quiz/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://www.dayly.app/og/quiz.svg">
+<meta property="og:image:alt" content="The Dayly setup quiz — the questions we would ask">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Dayly setup quiz — the questions we would ask">
+<meta name="twitter:description" content="The intake we use to set up a household: who lives here, when each is here, what the house is, and who does what. Twenty minutes, and it writes you a setup brief.">
+<meta name="twitter:image" content="https://www.dayly.app/og/quiz.svg">
+
+
+<link rel="icon" href="/dayly-site/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/dayly-site/apple-touch-icon.png">
+<link rel="manifest" href="/dayly-site/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="The Dayly Guide" href="/dayly-site/guide/rss.xml">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/dayly-site/fonts/dmsans-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/dayly-site/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2">
+<link rel="stylesheet" href="/dayly-site/fonts/fonts.css">
+<link rel="stylesheet" href="/dayly-site/site.css">
+
+<!-- analytics: set SITE.ga in lib/site.mjs to enable -->
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","@id":"https://www.dayly.app/#organization","name":"Dayly","url":"https://www.dayly.app","logo":{"@type":"ImageObject","url":"https://www.dayly.app/icon-512.png","width":512,"height":512},"description":"Family life in one place — schedules, responsibilities, homework, household jobs, routines and travel — while children gradually take ownership of their own.","email":"hello@dayly.app","foundingDate":"2026","sameAs":[]},{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.dayly.app/#website","name":"Dayly","url":"https://www.dayly.app","publisher":{"@id":"https://www.dayly.app/#organization"},"inLanguage":"en-GB","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.dayly.app/guide/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dayly.app/"},{"@type":"ListItem","position":2,"name":"Setup quiz","item":"https://www.dayly.app/quiz/"}]}]</script>
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap"><div class="bar">
+    <a class="logo" href="/dayly-site/"><svg class="mk" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="3.5" width="24" height="21" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M1 9.5h24" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 1v5M18.5 1v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="13" cy="17" r="3.4" fill="var(--acc)"/></svg> Dayly</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/dayly-site/how-it-works/">How it works</a><a href="/dayly-site/for-parents/">For parents</a><a href="/dayly-site/for-kids/">For kids</a><a href="/dayly-site/features/">Features</a><a href="/dayly-site/pricing/">Pricing</a><span class="has-menu"><a href="/dayly-site/guide/">The Dayly Guide <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true"><path d="M1 1l3.5 3.5L8 1" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg></a><div class="menu" role="group" aria-label="The Dayly Guide">
+    <span class="lbl mhead">Browse by subject</span>
+    <a href="/dayly-site/guide/organisation/">Organisation<small>Teaching children to organise themselves — bags, belongings, plans, mornings.</small></a><a href="/dayly-site/guide/responsibility/">Responsibility<small>What children can own at each age, and how to hand it over without a fight.</small></a><a href="/dayly-site/guide/chores/">Chores<small>Household jobs that actually get done, and what to do when they do not.</small></a><a href="/dayly-site/guide/homework/">Homework<small>What the evidence actually says about homework, and what to do on a Tuesday night when it is not going well.</small></a><a href="/dayly-site/guide/school/">School<small>Newsletters, timetables, kit, deadlines, and three children at two schools.</small></a><a href="/dayly-site/guide/routines/">Routines<small>Mornings, evenings, Sundays, and the resets that hold a week together.</small></a><a href="/dayly-site/guide/travel/">Travel<small>Packing, preparation, documents and timings — and how to get children to pack and carry their own bag.</small></a><a href="/dayly-site/guide/parenting/">Parenting<small>Manners, motivation, consideration and everyday family life — evidence-aware, and without the perfect-parent voice.</small></a><a href="/dayly-site/guide/mental-load/">Mental Load<small>The invisible work of running a family: what it is, why it lands on one person, and how to actually share it.</small></a><a href="/dayly-site/guide/learning/">Learning<small>Study skills that have evidence behind them, and an honest look at the apps and tools worth a child’s time.</small></a><a href="/dayly-site/guide/independence/">Independence<small>The long project of making yourself less necessary — time management, self-management and letting go, by age.</small></a>
+    <a href="/dayly-site/guide/"><strong>All articles</strong><small>Every guide, newest first.</small></a>
+  </div></span><span class="has-menu"><a href="/dayly-site/tools/">Free tools <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true"><path d="M1 1l3.5 3.5L8 1" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg></a><div class="menu" role="group" aria-label="Free tools">
+    <span class="lbl mhead">Free, no signup</span>
+    <a href="/dayly-site/quiz/"><strong>The setup quiz</strong><small>The questions we’d ask if we were setting it up for you.</small></a>
+    <a href="/dayly-site/tools/mental-load-calculator/">Family Mental Load Calculator<small>Twenty questions. One honest picture of who is carrying what.</small></a><a href="/dayly-site/tools/responsibility-generator/">Age-by-Age Responsibility Generator<small>Pick an age, get responsibilities a child that age can genuinely own.</small></a><a href="/dayly-site/tools/chore-generator/">Family Chore Generator<small>A workable rota for your children, your home and your week.</small></a><a href="/dayly-site/tools/packing-list-generator/">Family Packing List Generator<small>A list per person — including the children’s own, so they pack it themselves.</small></a><a href="/dayly-site/tools/homework-planner/">Homework Planner<small>Turn &quot;do the project&quot; into steps, times and a deadline that arrives slowly.</small></a><a href="/dayly-site/tools/family-reset-generator/">Family Reset Generator<small>Daily, weekly and monthly resets, sized to the time you actually have.</small></a>
+    <a href="/dayly-site/starter-kit/"><strong>Family Organisation Starter Kit</strong><small>Eight printable templates, free.</small></a>
+  </div></span>
+    </nav>
+    <div class="topcta">
+      <a class="searchlink" href="/dayly-site/search/" aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"><circle cx="7.2" cy="7.2" r="5.3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11.2 11.2L15.4 15.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </a>
+      <a class="btn sm" href="https://hemmet.onrender.com" data-cta="header-try">Try Dayly</a>
+    </div>
+    <button class="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu" onclick="var d=document.getElementById('drawer');var o=d.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span></button>
+  </div>
+  <div class="drawer" id="drawer">
+    <a href="/dayly-site/how-it-works/">How it works</a><a href="/dayly-site/for-parents/">For parents</a><a href="/dayly-site/for-kids/">For kids</a><a href="/dayly-site/features/">Features</a><a href="/dayly-site/pricing/">Pricing</a><a href="/dayly-site/guide/">The Dayly Guide</a><a href="/dayly-site/tools/">Free tools</a>
+    <a href="/dayly-site/search/">Search</a>
+    <span class="lbl">The Guide</span>
+    <a href="/dayly-site/guide/organisation/">Organisation</a><a href="/dayly-site/guide/responsibility/">Responsibility</a><a href="/dayly-site/guide/chores/">Chores</a><a href="/dayly-site/guide/homework/">Homework</a><a href="/dayly-site/guide/school/">School</a><a href="/dayly-site/guide/routines/">Routines</a><a href="/dayly-site/guide/travel/">Travel</a><a href="/dayly-site/guide/parenting/">Parenting</a><a href="/dayly-site/guide/mental-load/">Mental Load</a><a href="/dayly-site/guide/learning/">Learning</a><a href="/dayly-site/guide/independence/">Independence</a>
+    <span class="lbl">Free tools</span>
+    <a href="/dayly-site/quiz/">The setup quiz</a>
+    <a href="/dayly-site/tools/mental-load-calculator/">Family Mental Load Calculator</a><a href="/dayly-site/tools/responsibility-generator/">Age-by-Age Responsibility Generator</a><a href="/dayly-site/tools/chore-generator/">Family Chore Generator</a><a href="/dayly-site/tools/packing-list-generator/">Family Packing List Generator</a><a href="/dayly-site/tools/homework-planner/">Homework Planner</a><a href="/dayly-site/tools/family-reset-generator/">Family Reset Generator</a>
+    <div style="padding-top:18px"><a class="btn block" href="https://hemmet.onrender.com" data-cta="drawer-try">Try Dayly</a></div>
+  </div></div></header>
+<main id="main">
+<div class="wrap narrow">
+  <div class="arthead">
+    <nav class="crumbs" aria-label="Breadcrumb"><span><a href="/dayly-site/">Home</a></span><span aria-current="page" style="color:var(--mut)">Setup quiz</span></nav>
+    <span class="lbl acc" style="display:block;margin-bottom:18px">Setup quiz</span>
+    <h1 class="d2" style="margin-bottom:22px">The questions we’d ask if we were setting it up for you.</h1>
+    <p class="lead">This is the actual intake — the same questions, in the same order, that we use to build a
+    household from scratch. It takes about twenty minutes for the essential part, and it produces a written
+    setup brief you can work from, keep, or send to us.</p>
+    <p class="dim" style="font-size:var(--t-sm);margin-top:16px">Nothing you type leaves your browser. Answers save
+    as you go, so you can close the tab and come back.</p>
+  </div>
+
+  <div class="tool" id="qzIntro">
+    <span class="lbl">Before you start</span>
+    <div class="prose" style="max-width:none;font-size:var(--t-md);margin-top:14px">
+      <p>Answer what you can. Anything left blank gets a sensible default that is easy to change later — but
+      <strong>say when you are guessing</strong>, because a guessed answer that looks like a fact is worse than
+      a blank.</p>
+      <p>The questions are in the order that unblocks the most: <strong>who, when they’re here, what the house
+      is, then the jobs.</strong> The first four sections are enough to start — the quiz will tell you when you
+      reach that point, and you can stop there.</p>
+    </div>
+    <div class="btns" style="margin-top:24px">
+      <button class="btn" type="button" id="qzStart" data-cta="quiz-start">Start the quiz</button>
+      <button class="btn ghost" type="button" id="qzResume" hidden>Resume where I left off</button>
+    </div>
+  </div>
+
+  <div id="qzApp" hidden>
+    <div class="qprog">
+      <div class="meter"><i id="qzBar" style="width:0%"></i></div>
+      <div class="qmeta"><span id="qzWhere" class="lbl"></span><span id="qzCount" class="lbl"></span></div>
+    </div>
+
+    
+      <section class="qsec" data-sec="0" hidden>
+        <div class="tool">
+          <span class="lbl acc">Section 1 · essential</span>
+          <h2 class="d3" style="margin:12px 0 10px">The people</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">Who is in the household, and who the app is for.</p>
+          <div class="qz" data-qid="q_0_1" data-label="Who lives here? Full names, and the short name they actually get called.">
+    <label class="qlab" for="q_0_1">Who lives here? Full names, and the short name they actually get called.</label><textarea id="q_0_1" rows="3" data-q="q_0_1"></textarea></div><div class="qz" data-qid="q_0_2" data-label="Which are adults and which are children?">
+    <label class="qlab" for="q_0_2">Which are adults and which are children?</label><textarea id="q_0_2" rows="3" data-q="q_0_2"></textarea></div><div class="qz" data-qid="q_0_3" data-label="Ages of the children — or just school years.">
+    <label class="qlab" for="q_0_3">Ages of the children — or just school years.</label><textarea id="q_0_3" rows="3" data-q="q_0_3"></textarea></div><div class="qz" data-qid="q_0_4" data-label="Is anyone here only sometimes — a lodger, an au pair, grandparents who stay?">
+    <label class="qlab" for="q_0_4">Is anyone here only sometimes — a lodger, an au pair, grandparents who stay?</label><input type="text" id="q_0_4" data-q="q_0_4"></div><div class="qz" data-qid="q_0_5" data-label="Does anyone have a colour they’d want?">
+    <label class="qlab" for="q_0_5">Does anyone have a colour they’d want?</label><span class="qhint">Everyone gets one; it is how the app is read at a glance.</span><input type="text" id="q_0_5" data-q="q_0_5"></div><div class="qz" data-qid="q_0_6" data-label="Who will actually use the app?">
+    <label class="qlab" for="q_0_6">Who will actually use the app?</label><div class="chips" data-q="q_0_6"><button type="button" class="chip" aria-pressed="false" data-v="Everyone, children included">Everyone, children included</button><button type="button" class="chip" aria-pressed="false" data-v="The adults only">The adults only</button><button type="button" class="chip" aria-pressed="false" data-v="The adults first, children later">The adults first, children later</button></div></div><div class="qz" data-qid="q_0_7" data-label="Do any children need a simplified view — too young to read a full list?">
+    <label class="qlab" for="q_0_7">Do any children need a simplified view — too young to read a full list?</label><input type="text" id="q_0_7" data-q="q_0_7"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back disabled>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="1" hidden>
+        <div class="tool">
+          <span class="lbl acc">Section 2 · essential</span>
+          <h2 class="d3" style="margin:12px 0 10px">When each person is here</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">The one that everything else depends on. Answer it per child, not in general.</p>
+          <div class="qz" data-qid="q_1_8" data-label="Is every child here every day?">
+    <label class="qlab" for="q_1_8">Is every child here every day?</label><span class="qhint">If yes, skip to the house.</span><div class="chips" data-q="q_1_8"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_1_9" data-label="For each child who isn’t: which nights are they here, and which are they not?">
+    <label class="qlab" for="q_1_9">For each child who isn’t: which nights are they here, and which are they not?</label><textarea id="q_1_9" rows="3" data-q="q_1_9"></textarea></div><div class="qz" data-qid="q_1_10" data-label="Does that repeat weekly, or alternate over a fortnight?">
+    <label class="qlab" for="q_1_10">Does that repeat weekly, or alternate over a fortnight?</label><span class="qhint">Check a calendar together. Do not assume which weeks are even.</span><div class="chips" data-q="q_1_10"><button type="button" class="chip" aria-pressed="false" data-v="Weekly — the same every week">Weekly — the same every week</button><button type="button" class="chip" aria-pressed="false" data-v="Alternates — even ISO weeks">Alternates — even ISO weeks</button><button type="button" class="chip" aria-pressed="false" data-v="Alternates — odd ISO weeks">Alternates — odd ISO weeks</button><button type="button" class="chip" aria-pressed="false" data-v="Something else">Something else</button></div></div><div class="qz" data-qid="q_1_11" data-label="On the days they arrive, do they arrive in the morning or after school?">
+    <label class="qlab" for="q_1_11">On the days they arrive, do they arrive in the morning or after school?</label><div class="chips" data-q="q_1_11"><button type="button" class="chip" aria-pressed="false" data-v="Morning">Morning</button><button type="button" class="chip" aria-pressed="false" data-v="After school">After school</button><button type="button" class="chip" aria-pressed="false" data-v="It varies">It varies</button></div></div><div class="qz" data-qid="q_1_12" data-label="On the days they leave, do they leave before breakfast or after school?">
+    <label class="qlab" for="q_1_12">On the days they leave, do they leave before breakfast or after school?</label><div class="chips" data-q="q_1_12"><button type="button" class="chip" aria-pressed="false" data-v="Before breakfast">Before breakfast</button><button type="button" class="chip" aria-pressed="false" data-v="After school">After school</button><button type="button" class="chip" aria-pressed="false" data-v="It varies">It varies</button></div></div><div class="qz" data-qid="q_1_13" data-label="Is anyone here for breakfast but not dinner, or the reverse?">
+    <label class="qlab" for="q_1_13">Is anyone here for breakfast but not dinner, or the reverse?</label><input type="text" id="q_1_13" data-q="q_1_13"></div><div class="qz" data-qid="q_1_14" data-label="Are there exceptions — one Tuesday a month, alternate Fridays, a club night away?">
+    <label class="qlab" for="q_1_14">Are there exceptions — one Tuesday a month, alternate Fridays, a club night away?</label><textarea id="q_1_14" rows="3" data-q="q_1_14"></textarea></div><div class="qz" data-qid="q_1_15" data-label="What happens in the school holidays? Same pattern or different?">
+    <label class="qlab" for="q_1_15">What happens in the school holidays? Same pattern or different?</label><input type="text" id="q_1_15" data-q="q_1_15"></div><div class="qz" data-qid="q_1_16" data-label="Who else needs to know the pattern — the other parent, a nanny?">
+    <label class="qlab" for="q_1_16">Who else needs to know the pattern — the other parent, a nanny?</label><input type="text" id="q_1_16" data-q="q_1_16"></div><div class="qz" data-qid="q_1_16b" data-label="Is there a second household with its own jobs and routines?">
+    <label class="qlab" for="q_1_16b">Is there a second household with its own jobs and routines?</label><span class="qhint">Added: if children move between two homes that both use Dayly, each home keeps its own jobs while the children stay the same people.</span><div class="chips" data-q="q_1_16b"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="2" hidden>
+        <div class="tool">
+          <span class="lbl acc">Section 3 · essential</span>
+          <h2 class="d3" style="margin:12px 0 10px">The house</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">Every space you would ever want to clean, tidy or track.</p>
+          <div class="qz" data-qid="q_2_17" data-label="List every room and space you’d ever want to clean, tidy or track.">
+    <label class="qlab" for="q_2_17">List every room and space you’d ever want to clean, tidy or track.</label><span class="qhint">Use your names for them, not estate-agent ones. If the living room is called the church, call it the church.</span><textarea id="q_2_17" rows="3" data-q="q_2_17"></textarea></div><div class="qz" data-qid="q_2_18" data-label="Which rooms are bedrooms, and who sleeps in each?">
+    <label class="qlab" for="q_2_18">Which rooms are bedrooms, and who sleeps in each?</label><textarea id="q_2_18" rows="3" data-q="q_2_18"></textarea></div><div class="qz" data-qid="q_2_19" data-label="Do any children share a room? Do they share a bed, or is it two beds?">
+    <label class="qlab" for="q_2_19">Do any children share a room? Do they share a bed, or is it two beds?</label><input type="text" id="q_2_19" data-q="q_2_19"></div><div class="qz" data-qid="q_2_20" data-label="Which rooms have bathrooms or toilets in them?">
+    <label class="qlab" for="q_2_20">Which rooms have bathrooms or toilets in them?</label><input type="text" id="q_2_20" data-q="q_2_20"></div><div class="qz" data-qid="q_2_21" data-label="Where is the laundry done? Where do dirty clothes go?">
+    <label class="qlab" for="q_2_21">Where is the laundry done? Where do dirty clothes go?</label><input type="text" id="q_2_21" data-q="q_2_21"></div><div class="qz" data-qid="q_2_22" data-label="Is there a room nobody is responsible for?">
+    <label class="qlab" for="q_2_22">Is there a room nobody is responsible for?</label><input type="text" id="q_2_22" data-q="q_2_22"></div><div class="qz" data-qid="q_2_23" data-label="Anything with its own rules — a room that’s out of bounds, a home office, a rental?">
+    <label class="qlab" for="q_2_23">Anything with its own rules — a room that’s out of bounds, a home office, a rental?</label><input type="text" id="q_2_23" data-q="q_2_23"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="3" hidden>
+        <div class="tool">
+          <span class="lbl acc">Section 4 · essential</span>
+          <h2 class="d3" style="margin:12px 0 10px">Who is in charge of what</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">The step that does the actual work. An area comes with the noticing, not just the task.</p>
+          <div class="qz" data-qid="q_3_24" data-label="Do you want each area to have one person who resets it, or is cleaning shared?">
+    <label class="qlab" for="q_3_24">Do you want each area to have one person who resets it, or is cleaning shared?</label><div class="chips" data-q="q_3_24"><button type="button" class="chip" aria-pressed="false" data-v="One person per area">One person per area</button><button type="button" class="chip" aria-pressed="false" data-v="Shared between everyone">Shared between everyone</button><button type="button" class="chip" aria-pressed="false" data-v="A mix — some owned, some shared">A mix — some owned, some shared</button></div></div><div class="qz" data-qid="q_3_25" data-label="If one person per area: who has which? Include the adults.">
+    <label class="qlab" for="q_3_25">If one person per area: who has which? Include the adults.</label><textarea id="q_3_25" rows="3" data-q="q_3_25"></textarea></div><div class="qz" data-qid="q_3_26" data-label="Should it rotate? How often?">
+    <label class="qlab" for="q_3_26">Should it rotate? How often?</label><div class="chips" data-q="q_3_26"><button type="button" class="chip" aria-pressed="false" data-v="Never — fixed">Never — fixed</button><button type="button" class="chip" aria-pressed="false" data-v="Weekly">Weekly</button><button type="button" class="chip" aria-pressed="false" data-v="Fortnightly">Fortnightly</button><button type="button" class="chip" aria-pressed="false" data-v="Monthly">Monthly</button><button type="button" class="chip" aria-pressed="false" data-v="Every two months">Every two months</button><button type="button" class="chip" aria-pressed="false" data-v="Termly">Termly</button></div></div><div class="qz" data-qid="q_3_26b" data-label="On what date does a rotation turn over?">
+    <label class="qlab" for="q_3_26b">On what date does a rotation turn over?</label><span class="qhint">Calendar rotations always turn on the 1st. Week-based ones turn on a Monday.</span><input type="text" id="q_3_26b" data-q="q_3_26b"></div><div class="qz" data-qid="q_3_27" data-label="Is anyone’s area fixed and never rotates?">
+    <label class="qlab" for="q_3_27">Is anyone’s area fixed and never rotates?</label><input type="text" id="q_3_27" data-q="q_3_27"></div><div class="qz" data-qid="q_3_28" data-label="Is a child’s own bedroom theirs by definition, or does that rotate too?">
+    <label class="qlab" for="q_3_28">Is a child’s own bedroom theirs by definition, or does that rotate too?</label><div class="chips" data-q="q_3_28"><button type="button" class="chip" aria-pressed="false" data-v="Theirs, always">Theirs, always</button><button type="button" class="chip" aria-pressed="false" data-v="It rotates like everything else">It rotates like everything else</button></div></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+          <div class="ebox try" style="margin-top:var(--s3)">
+            <span class="lbl">That’s enough to start</span>
+            <p>You have answered the four sections that unblock everything else. Everything after this makes it
+            better rather than possible — and you can come back to it whenever you like.</p>
+          </div>
+      </section>
+      <section class="qsec" data-sec="4" hidden>
+        <div class="tool">
+          <span class="lbl">Section 5</span>
+          <h2 class="d3" style="margin:12px 0 10px">The daily routine</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">Walk through a real day, not the version you wish happened.</p>
+          <div class="qz" data-qid="q_4_29" data-label="Walk me through a weekday morning, in order, with times.">
+    <label class="qlab" for="q_4_29">Walk me through a weekday morning, in order, with times.</label><span class="qhint">Who gets up when, who makes what, who leaves when.</span><textarea id="q_4_29" rows="3" data-q="q_4_29"></textarea></div><div class="qz" data-qid="q_4_30" data-label="Same for a weekday evening, from getting in to lights out.">
+    <label class="qlab" for="q_4_30">Same for a weekday evening, from getting in to lights out.</label><textarea id="q_4_30" rows="3" data-q="q_4_30"></textarea></div><div class="qz" data-qid="q_4_31" data-label="Same for a weekend day — usually different enough to be worth its own answer.">
+    <label class="qlab" for="q_4_31">Same for a weekend day — usually different enough to be worth its own answer.</label><textarea id="q_4_31" rows="3" data-q="q_4_31"></textarea></div><div class="qz" data-qid="q_4_32" data-label="Which of those jobs does a named person always do, and which get shared out?">
+    <label class="qlab" for="q_4_32">Which of those jobs does a named person always do, and which get shared out?</label><textarea id="q_4_32" rows="3" data-q="q_4_32"></textarea></div><div class="qz" data-qid="q_4_33" data-label="For the shared ones: should the app work out whose turn it is from who is actually in the house that day, or do you want a fixed rota?">
+    <label class="qlab" for="q_4_33">For the shared ones: should the app work out whose turn it is from who is actually in the house that day, or do you want a fixed rota?</label><div class="chips" data-q="q_4_33"><button type="button" class="chip" aria-pressed="false" data-v="Work it out from who is here">Work it out from who is here</button><button type="button" class="chip" aria-pressed="false" data-v="A fixed rota">A fixed rota</button><button type="button" class="chip" aria-pressed="false" data-v="Fixed, but skip anyone who is away">Fixed, but skip anyone who is away</button></div></div><div class="qz" data-qid="q_4_34" data-label="Are there jobs only an adult should do?">
+    <label class="qlab" for="q_4_34">Are there jobs only an adult should do?</label><input type="text" id="q_4_34" data-q="q_4_34"></div><div class="qz" data-qid="q_4_35" data-label="Is there a home reset — a point in the day when everything gets put back?">
+    <label class="qlab" for="q_4_35">Is there a home reset — a point in the day when everything gets put back?</label><input type="text" id="q_4_35" data-q="q_4_35"></div><div class="qz" data-qid="q_4_36" data-label="What time is dinner? What time is lights out on a school night? At the weekend?">
+    <label class="qlab" for="q_4_36">What time is dinner? What time is lights out on a school night? At the weekend?</label><input type="text" id="q_4_36" data-q="q_4_36"></div><div class="qz" data-qid="q_4_37" data-label="Roughly how long does each job take?">
+    <label class="qlab" for="q_4_37">Roughly how long does each job take?</label><span class="qhint">Needed to tell you when the day will not fit.</span><input type="text" id="q_4_37" data-q="q_4_37"></div><div class="qz" data-qid="q_4_38" data-label="Which jobs are only worth doing on a day off — the big ones there’s no time for on a school night?">
+    <label class="qlab" for="q_4_38">Which jobs are only worth doing on a day off — the big ones there’s no time for on a school night?</label><input type="text" id="q_4_38" data-q="q_4_38"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="5" hidden>
+        <div class="tool">
+          <span class="lbl">Section 6</span>
+          <h2 class="d3" style="margin:12px 0 10px">Cleaning</h2>
+          
+          <div class="qz" data-qid="q_5_39" data-label="What has to happen in every room, and how often?">
+    <label class="qlab" for="q_5_39">What has to happen in every room, and how often?</label><textarea id="q_5_39" rows="3" data-q="q_5_39"></textarea></div><div class="qz" data-qid="q_5_40" data-label="What’s specific to one room — the fridge, the glass cupboard, the oven, the gutters?">
+    <label class="qlab" for="q_5_40">What’s specific to one room — the fridge, the glass cupboard, the oven, the gutters?</label><textarea id="q_5_40" rows="3" data-q="q_5_40"></textarea></div><div class="qz" data-qid="q_5_41" data-label="Which jobs are optional — nice if they happen, never worth nagging about?">
+    <label class="qlab" for="q_5_41">Which jobs are optional — nice if they happen, never worth nagging about?</label><input type="text" id="q_5_41" data-q="q_5_41"></div><div class="qz" data-qid="q_5_42" data-label="Is there a cleaner? What do they do, on which days, and what’s left for you?">
+    <label class="qlab" for="q_5_42">Is there a cleaner? What do they do, on which days, and what’s left for you?</label><input type="text" id="q_5_42" data-q="q_5_42"></div><div class="qz" data-qid="q_5_43" data-label="What gets forgotten and then becomes a problem?">
+    <label class="qlab" for="q_5_43">What gets forgotten and then becomes a problem?</label><input type="text" id="q_5_43" data-q="q_5_43"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="6" hidden>
+        <div class="tool">
+          <span class="lbl">Section 7</span>
+          <h2 class="d3" style="margin:12px 0 10px">Beds, towels and laundry</h2>
+          
+          <div class="qz" data-qid="q_6_44" data-label="How often does each piece change: bottom sheet, pillowcases, top sheet or duvet cover?">
+    <label class="qlab" for="q_6_44">How often does each piece change: bottom sheet, pillowcases, top sheet or duvet cover?</label><input type="text" id="q_6_44" data-q="q_6_44"></div><div class="qz" data-qid="q_6_45" data-label="Is that the same for every bed, or do some change more often?">
+    <label class="qlab" for="q_6_45">Is that the same for every bed, or do some change more often?</label><input type="text" id="q_6_45" data-q="q_6_45"></div><div class="qz" data-qid="q_6_46" data-label="Which day do beds get changed?">
+    <label class="qlab" for="q_6_46">Which day do beds get changed?</label><div class="chips" data-q="q_6_46"><button type="button" class="chip" aria-pressed="false" data-v="Monday">Monday</button><button type="button" class="chip" aria-pressed="false" data-v="Tuesday">Tuesday</button><button type="button" class="chip" aria-pressed="false" data-v="Wednesday">Wednesday</button><button type="button" class="chip" aria-pressed="false" data-v="Thursday">Thursday</button><button type="button" class="chip" aria-pressed="false" data-v="Friday">Friday</button><button type="button" class="chip" aria-pressed="false" data-v="Saturday">Saturday</button><button type="button" class="chip" aria-pressed="false" data-v="Sunday">Sunday</button><button type="button" class="chip" aria-pressed="false" data-v="It varies">It varies</button></div></div><div class="qz" data-qid="q_6_47" data-label="Who strips the bed?">
+    <label class="qlab" for="q_6_47">Who strips the bed?</label><div class="chips" data-q="q_6_47"><button type="button" class="chip" aria-pressed="false" data-v="The person who sleeps in it">The person who sleeps in it</button><button type="button" class="chip" aria-pressed="false" data-v="An adult">An adult</button><button type="button" class="chip" aria-pressed="false" data-v="Depends on the child’s age">Depends on the child’s age</button></div></div><div class="qz" data-qid="q_6_48" data-label="Where does the used bedding go?">
+    <label class="qlab" for="q_6_48">Where does the used bedding go?</label><input type="text" id="q_6_48" data-q="q_6_48"></div><div class="qz" data-qid="q_6_49" data-label="Towels: how often, and in which rooms? Does everyone have their own?">
+    <label class="qlab" for="q_6_49">Towels: how often, and in which rooms? Does everyone have their own?</label><input type="text" id="q_6_49" data-q="q_6_49"></div><div class="qz" data-qid="q_6_50" data-label="Does each child bring their own laundry down? On a set day, or when the bag is full?">
+    <label class="qlab" for="q_6_50">Does each child bring their own laundry down? On a set day, or when the bag is full?</label><input type="text" id="q_6_50" data-q="q_6_50"></div><div class="qz" data-qid="q_6_50b" data-label="What size is each child in — uniform, shoes, coat?">
+    <label class="qlab" for="q_6_50b">What size is each child in — uniform, shoes, coat?</label><span class="qhint">Added: the app tracks clothes sizes per child. It is the thing that is always looked up in a shop and never written down.</span><input type="text" id="q_6_50b" data-q="q_6_50b"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="7" hidden>
+        <div class="tool">
+          <span class="lbl">Section 8</span>
+          <h2 class="d3" style="margin:12px 0 10px">School and activities</h2>
+          
+          <div class="qz" data-qid="q_7_51" data-label="Which school does each child go to? Address?">
+    <label class="qlab" for="q_7_51">Which school does each child go to? Address?</label><textarea id="q_7_51" rows="3" data-q="q_7_51"></textarea></div><div class="qz" data-qid="q_7_52" data-label="Start and finish times, per child, per day.">
+    <label class="qlab" for="q_7_52">Start and finish times, per child, per day.</label><span class="qhint">They are rarely the same.</span><textarea id="q_7_52" rows="3" data-q="q_7_52"></textarea></div><div class="qz" data-qid="q_7_53" data-label="Do they go together, or separately? Who takes them?">
+    <label class="qlab" for="q_7_53">Do they go together, or separately? Who takes them?</label><input type="text" id="q_7_53" data-q="q_7_53"></div><div class="qz" data-qid="q_7_54" data-label="How long does the journey take, and how early do you want to arrive?">
+    <label class="qlab" for="q_7_54">How long does the journey take, and how early do you want to arrive?</label><input type="text" id="q_7_54" data-q="q_7_54"></div><div class="qz" data-qid="q_7_55" data-label="If they start at different times, does someone wait? Is that a problem?">
+    <label class="qlab" for="q_7_55">If they start at different times, does someone wait? Is that a problem?</label><input type="text" id="q_7_55" data-q="q_7_55"></div><div class="qz" data-qid="q_7_56" data-label="Every regular activity: what, which child, which day, start and finish time, where.">
+    <label class="qlab" for="q_7_56">Every regular activity: what, which child, which day, start and finish time, where.</label><textarea id="q_7_56" rows="3" data-q="q_7_56"></textarea></div><div class="qz" data-qid="q_7_57" data-label="The address for each — needed to work out when to leave.">
+    <label class="qlab" for="q_7_57">The address for each — needed to work out when to leave.</label><input type="text" id="q_7_57" data-q="q_7_57"></div><div class="qz" data-qid="q_7_58" data-label="How long does it take to get to each?">
+    <label class="qlab" for="q_7_58">How long does it take to get to each?</label><input type="text" id="q_7_58" data-q="q_7_58"></div><div class="qz" data-qid="q_7_59" data-label="Which activities are you not sure of the times for?">
+    <label class="qlab" for="q_7_59">Which activities are you not sure of the times for?</label><span class="qhint">Better a blank than a guess. A guessed answer that looks like a fact is worse than no answer.</span><input type="text" id="q_7_59" data-q="q_7_59"></div><div class="qz" data-qid="q_7_60" data-label="Anything on specific dates rather than weekly — a book club, a term-time-only class?">
+    <label class="qlab" for="q_7_60">Anything on specific dates rather than weekly — a book club, a term-time-only class?</label><input type="text" id="q_7_60" data-q="q_7_60"></div><div class="qz" data-qid="q_7_61" data-label="Kit or equipment needed on which days?">
+    <label class="qlab" for="q_7_61">Kit or equipment needed on which days?</label><input type="text" id="q_7_61" data-q="q_7_61"></div><div class="qz" data-qid="q_7_62" data-label="Homework nights, reading, practice?">
+    <label class="qlab" for="q_7_62">Homework nights, reading, practice?</label><input type="text" id="q_7_62" data-q="q_7_62"></div><div class="qz" data-qid="q_7_63" data-label="Parents’ evenings, development talks, photo days, term dates?">
+    <label class="qlab" for="q_7_63">Parents’ evenings, development talks, photo days, term dates?</label><input type="text" id="q_7_63" data-q="q_7_63"></div><div class="qz" data-qid="q_7_63b" data-label="Which days differ from the normal timetable — inset days, non-uniform days, trips, late starts?">
+    <label class="qlab" for="q_7_63b">Which days differ from the normal timetable — inset days, non-uniform days, trips, late starts?</label><span class="qhint">Added: the app stores these as exceptions that override the timetable and say so. They are the single most commonly missed thing.</span><textarea id="q_7_63b" rows="3" data-q="q_7_63b"></textarea></div><div class="qz" data-qid="q_7_63c" data-label="Who is each child’s teacher or mentor, and what is the school office number?">
+    <label class="qlab" for="q_7_63c">Who is each child’s teacher or mentor, and what is the school office number?</label><span class="qhint">Added: the app holds contacts per child, and shows a child their own.</span><input type="text" id="q_7_63c" data-q="q_7_63c"></div><div class="qz" data-qid="q_7_63d" data-label="How do you report an absence, and how do you apply for leave?">
+    <label class="qlab" for="q_7_63d">How do you report an absence, and how do you apply for leave?</label><span class="qhint">Added: every school does this differently, it is always needed in a hurry, and it is adults-only in the app.</span><input type="text" id="q_7_63d" data-q="q_7_63d"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="8" hidden>
+        <div class="tool">
+          <span class="lbl">Section 9</span>
+          <h2 class="d3" style="margin:12px 0 10px">Food</h2>
+          
+          <div class="qz" data-qid="q_8_64" data-label="Which meals do you plan — breakfast, lunch, dinner? Every day, or only some?">
+    <label class="qlab" for="q_8_64">Which meals do you plan — breakfast, lunch, dinner? Every day, or only some?</label><input type="text" id="q_8_64" data-q="q_8_64"></div><div class="qz" data-qid="q_8_65" data-label="Does that differ at the weekend?">
+    <label class="qlab" for="q_8_65">Does that differ at the weekend?</label><input type="text" id="q_8_65" data-q="q_8_65"></div><div class="qz" data-qid="q_8_66" data-label="What are the meals you actually cook, on repeat? List them.">
+    <label class="qlab" for="q_8_66">What are the meals you actually cook, on repeat? List them.</label><textarea id="q_8_66" rows="3" data-q="q_8_66"></textarea></div><div class="qz" data-qid="q_8_67" data-label="For each: rough ingredients. Quantities can come later.">
+    <label class="qlab" for="q_8_67">For each: rough ingredients. Quantities can come later.</label><textarea id="q_8_67" rows="3" data-q="q_8_67"></textarea></div><div class="qz" data-qid="q_8_68" data-label="Anything you don’t eat — allergies, intolerances, a way of eating you follow?">
+    <label class="qlab" for="q_8_68">Anything you don’t eat — allergies, intolerances, a way of eating you follow?</label><span class="qhint">Say it directly. A pattern like &quot;no pasta, no bread&quot; is easy to miss and it ruins every shopping list if it is missed.</span><textarea id="q_8_68" rows="3" data-q="q_8_68"></textarea></div><div class="qz" data-qid="q_8_69" data-label="Vegetables everyone actually likes? Ones that always get left?">
+    <label class="qlab" for="q_8_69">Vegetables everyone actually likes? Ones that always get left?</label><input type="text" id="q_8_69" data-q="q_8_69"></div><div class="qz" data-qid="q_8_70" data-label="Regular sides? Occasional treats?">
+    <label class="qlab" for="q_8_70">Regular sides? Occasional treats?</label><input type="text" id="q_8_70" data-q="q_8_70"></div><div class="qz" data-qid="q_8_71" data-label="Who cooks? Should the children cook, and how often?">
+    <label class="qlab" for="q_8_71">Who cooks? Should the children cook, and how often?</label><input type="text" id="q_8_71" data-q="q_8_71"></div><div class="qz" data-qid="q_8_72" data-label="If children cook, do they cook in pairs?">
+    <label class="qlab" for="q_8_72">If children cook, do they cook in pairs?</label><div class="chips" data-q="q_8_72"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_8_73" data-label="Does the cook rota need to work around training?">
+    <label class="qlab" for="q_8_73">Does the cook rota need to work around training?</label><div class="chips" data-q="q_8_73"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_8_74" data-label="Do you batch cook and freeze? What, and when — which day is realistic?">
+    <label class="qlab" for="q_8_74">Do you batch cook and freeze? What, and when — which day is realistic?</label><input type="text" id="q_8_74" data-q="q_8_74"></div><div class="qz" data-qid="q_8_75" data-label="How many portions is a normal batch?">
+    <label class="qlab" for="q_8_75">How many portions is a normal batch?</label><input type="text" id="q_8_75" data-q="q_8_75"></div><div class="qz" data-qid="q_8_76" data-label="Which shop, and roughly what order do you walk it in?">
+    <label class="qlab" for="q_8_76">Which shop, and roughly what order do you walk it in?</label><input type="text" id="q_8_76" data-q="q_8_76"></div><div class="qz" data-qid="q_8_77" data-label="Anyone with a separate shopping list — a different shop, a delivery?">
+    <label class="qlab" for="q_8_77">Anyone with a separate shopping list — a different shop, a delivery?</label><input type="text" id="q_8_77" data-q="q_8_77"></div><div class="qz" data-qid="q_8_77b" data-label="Should the children get a say in what is cooked?">
+    <label class="qlab" for="q_8_77b">Should the children get a say in what is cooked?</label><span class="qhint">Added: the app can let everyone vote on the week’s meals. It changes the argument at the table more than you would expect.</span><div class="chips" data-q="q_8_77b"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="9" hidden>
+        <div class="tool">
+          <span class="lbl">Section 10</span>
+          <h2 class="d3" style="margin:12px 0 10px">The rest of the house</h2>
+          
+          <div class="qz" data-qid="q_9_78" data-label="Recurring maintenance: filters, smoke alarms, boiler, gutters, meters.">
+    <label class="qlab" for="q_9_78">Recurring maintenance: filters, smoke alarms, boiler, gutters, meters.</label><input type="text" id="q_9_78" data-q="q_9_78"></div><div class="qz" data-qid="q_9_79" data-label="Car: service, inspection, tyre changes, insurance.">
+    <label class="qlab" for="q_9_79">Car: service, inspection, tyre changes, insurance.</label><input type="text" id="q_9_79" data-q="q_9_79"></div><div class="qz" data-qid="q_9_80" data-label="Bin days — which bins, which day, who takes them out?">
+    <label class="qlab" for="q_9_80">Bin days — which bins, which day, who takes them out?</label><input type="text" id="q_9_80" data-q="q_9_80"></div><div class="qz" data-qid="q_9_81" data-label="Recycling — separate day, separate person?">
+    <label class="qlab" for="q_9_81">Recycling — separate day, separate person?</label><input type="text" id="q_9_81" data-q="q_9_81"></div><div class="qz" data-qid="q_9_82" data-label="Plants — indoor, outdoor, who waters them, seasonal?">
+    <label class="qlab" for="q_9_82">Plants — indoor, outdoor, who waters them, seasonal?</label><input type="text" id="q_9_82" data-q="q_9_82"></div><div class="qz" data-qid="q_9_83" data-label="Pets — feeding, walking, litter, vet?">
+    <label class="qlab" for="q_9_83">Pets — feeding, walking, litter, vet?</label><input type="text" id="q_9_83" data-q="q_9_83"></div><div class="qz" data-qid="q_9_84" data-label="What breaks often enough to want a running &quot;needs fixing&quot; list?">
+    <label class="qlab" for="q_9_84">What breaks often enough to want a running &quot;needs fixing&quot; list?</label><input type="text" id="q_9_84" data-q="q_9_84"></div><div class="qz" data-qid="q_9_85" data-label="What does a babysitter or house-sitter always ask?">
+    <label class="qlab" for="q_9_85">What does a babysitter or house-sitter always ask?</label><span class="qhint">Wifi, alarm, stopcock, bin day, where things are.</span><input type="text" id="q_9_85" data-q="q_9_85"></div><div class="qz" data-qid="q_9_86" data-label="Contacts: plumber, electrician, doctor, school, insurance, landlord.">
+    <label class="qlab" for="q_9_86">Contacts: plumber, electrician, doctor, school, insurance, landlord.</label><textarea id="q_9_86" rows="3" data-q="q_9_86"></textarea></div><div class="qz" data-qid="q_9_87" data-label="Anything an adult should see and a child shouldn’t?">
+    <label class="qlab" for="q_9_87">Anything an adult should see and a child shouldn’t?</label><input type="text" id="q_9_87" data-q="q_9_87"></div><div class="qz" data-qid="q_9_87b" data-label="Do you want a family noticeboard — one place for the things that are not jobs?">
+    <label class="qlab" for="q_9_87b">Do you want a family noticeboard — one place for the things that are not jobs?</label><span class="qhint">Added: the app has one. It is where &quot;Grandma is coming Sunday&quot; goes when it is not an event and not a task.</span><div class="chips" data-q="q_9_87b"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="10" hidden>
+        <div class="tool">
+          <span class="lbl">Section 11</span>
+          <h2 class="d3" style="margin:12px 0 10px">Health and appointments</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">Not in the original intake at all, and it is one of the heaviest things a household carries.</p>
+          <div class="qz" data-qid="q_10_H1" data-label="Dentist and optician: who, where, and when is each person next due?">
+    <label class="qlab" for="q_10_H1">Dentist and optician: who, where, and when is each person next due?</label><input type="text" id="q_10_H1" data-q="q_10_H1"></div><div class="qz" data-qid="q_10_H2" data-label="Any vaccinations, check-ups or follow-ups outstanding?">
+    <label class="qlab" for="q_10_H2">Any vaccinations, check-ups or follow-ups outstanding?</label><input type="text" id="q_10_H2" data-q="q_10_H2"></div><div class="qz" data-qid="q_10_H3" data-label="Repeat prescriptions — who, what, and how often do they need reordering?">
+    <label class="qlab" for="q_10_H3">Repeat prescriptions — who, what, and how often do they need reordering?</label><input type="text" id="q_10_H3" data-q="q_10_H3"></div><div class="qz" data-qid="q_10_H4" data-label="Allergies, conditions or medication anyone looking after the children must know about.">
+    <label class="qlab" for="q_10_H4">Allergies, conditions or medication anyone looking after the children must know about.</label><span class="qhint">This is different from the food question. It is the one a babysitter needs.</span><input type="text" id="q_10_H4" data-q="q_10_H4"></div><div class="qz" data-qid="q_10_H5" data-label="Who is the GP, and what is the out-of-hours number?">
+    <label class="qlab" for="q_10_H5">Who is the GP, and what is the out-of-hours number?</label><input type="text" id="q_10_H5" data-q="q_10_H5"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="11" hidden>
+        <div class="tool">
+          <span class="lbl">Section 12</span>
+          <h2 class="d3" style="margin:12px 0 10px">Birthdays, presents and the social calendar</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">Also missing from the original intake, and it is the category that generates the most last-minute panic.</p>
+          <div class="qz" data-qid="q_11_O1" data-label="Birthdays you need to remember — the household, and everyone outside it.">
+    <label class="qlab" for="q_11_O1">Birthdays you need to remember — the household, and everyone outside it.</label><textarea id="q_11_O1" rows="3" data-q="q_11_O1"></textarea></div><div class="qz" data-qid="q_11_O2" data-label="How far ahead do you want to be told, so there is time to buy something?">
+    <label class="qlab" for="q_11_O2">How far ahead do you want to be told, so there is time to buy something?</label><input type="text" id="q_11_O2" data-q="q_11_O2"></div><div class="qz" data-qid="q_11_O3" data-label="Whose parties are coming up, and who is taking them?">
+    <label class="qlab" for="q_11_O3">Whose parties are coming up, and who is taking them?</label><input type="text" id="q_11_O3" data-q="q_11_O3"></div><div class="qz" data-qid="q_11_O4" data-label="Regular social commitments — visits, family meals, standing arrangements.">
+    <label class="qlab" for="q_11_O4">Regular social commitments — visits, family meals, standing arrangements.</label><input type="text" id="q_11_O4" data-q="q_11_O4"></div><div class="qz" data-qid="q_11_O5" data-label="Anything annual that always creeps up: Christmas, term-end, teacher gifts, cards.">
+    <label class="qlab" for="q_11_O5">Anything annual that always creeps up: Christmas, term-end, teacher gifts, cards.</label><input type="text" id="q_11_O5" data-q="q_11_O5"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="12" hidden>
+        <div class="tool">
+          <span class="lbl">Section 13</span>
+          <h2 class="d3" style="margin:12px 0 10px">Trips and travel</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">Also missing. Passport expiry is the one packing mistake that cannot be fixed at the destination.</p>
+          <div class="qz" data-qid="q_12_T1" data-label="When does each passport expire?">
+    <label class="qlab" for="q_12_T1">When does each passport expire?</label><input type="text" id="q_12_T1" data-q="q_12_T1"></div><div class="qz" data-qid="q_12_T2" data-label="Any trips already booked, and when?">
+    <label class="qlab" for="q_12_T2">Any trips already booked, and when?</label><input type="text" id="q_12_T2" data-q="q_12_T2"></div><div class="qz" data-qid="q_12_T3" data-label="Should each child have their own packing list to tick off?">
+    <label class="qlab" for="q_12_T3">Should each child have their own packing list to tick off?</label><div class="chips" data-q="q_12_T3"><button type="button" class="chip" aria-pressed="false" data-v="Yes, for all of them">Yes, for all of them</button><button type="button" class="chip" aria-pressed="false" data-v="Only the older ones">Only the older ones</button><button type="button" class="chip" aria-pressed="false" data-v="No — an adult packs">No — an adult packs</button></div></div><div class="qz" data-qid="q_12_T4" data-label="Who feeds the pets, waters the plants and holds a key when you are away?">
+    <label class="qlab" for="q_12_T4">Who feeds the pets, waters the plants and holds a key when you are away?</label><input type="text" id="q_12_T4" data-q="q_12_T4"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="13" hidden>
+        <div class="tool">
+          <span class="lbl">Section 14</span>
+          <h2 class="d3" style="margin:12px 0 10px">Money and motivation</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">Only if you want it. The app works perfectly well with none of this switched on.</p>
+          <div class="qz" data-qid="q_13_88" data-label="Do the children get pocket money? How much, how often, conditional on anything?">
+    <label class="qlab" for="q_13_88">Do the children get pocket money? How much, how often, conditional on anything?</label><input type="text" id="q_13_88" data-q="q_13_88"></div><div class="qz" data-qid="q_13_89" data-label="Do you want a points system? What earns points?">
+    <label class="qlab" for="q_13_89">Do you want a points system? What earns points?</label><div class="chips" data-q="q_13_89"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_13_90" data-label="Are points worth money, or something else?">
+    <label class="qlab" for="q_13_90">Are points worth money, or something else?</label><div class="chips" data-q="q_13_90"><button type="button" class="chip" aria-pressed="false" data-v="Money">Money</button><button type="button" class="chip" aria-pressed="false" data-v="Screen time">Screen time</button><button type="button" class="chip" aria-pressed="false" data-v="Choosing dinner">Choosing dinner</button><button type="button" class="chip" aria-pressed="false" data-v="A trip or an outing">A trip or an outing</button><button type="button" class="chip" aria-pressed="false" data-v="Nothing — just the tally">Nothing — just the tally</button></div></div><div class="qz" data-qid="q_13_91" data-label="Should children be able to take on someone else’s job for points?">
+    <label class="qlab" for="q_13_91">Should children be able to take on someone else’s job for points?</label><div class="chips" data-q="q_13_91"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_13_92" data-label="Should they be able to trade jobs between themselves?">
+    <label class="qlab" for="q_13_92">Should they be able to trade jobs between themselves?</label><div class="chips" data-q="q_13_92"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_13_93" data-label="Do you want to reward things that aren’t jobs — reading, training, eating well, helping someone? What’s each worth relative to the others?">
+    <label class="qlab" for="q_13_93">Do you want to reward things that aren’t jobs — reading, training, eating well, helping someone? What’s each worth relative to the others?</label><textarea id="q_13_93" rows="3" data-q="q_13_93"></textarea></div><div class="qz" data-qid="q_13_94" data-label="Who approves and pays out?">
+    <label class="qlab" for="q_13_94">Who approves and pays out?</label><input type="text" id="q_13_94" data-q="q_13_94"></div><div class="qz" data-qid="q_13_95" data-label="Savings goals?">
+    <label class="qlab" for="q_13_95">Savings goals?</label><input type="text" id="q_13_95" data-q="q_13_95"></div><div class="qz" data-qid="q_13_95b" data-label="Household bills, subscriptions and renewals worth tracking — and when each falls due.">
+    <label class="qlab" for="q_13_95b">Household bills, subscriptions and renewals worth tracking — and when each falls due.</label><span class="qhint">Added: insurance in March and a subscription nobody uses are both mental load, and neither is a chore.</span><input type="text" id="q_13_95b" data-q="q_13_95b"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="qsec" data-sec="14" hidden>
+        <div class="tool">
+          <span class="lbl">Section 15</span>
+          <h2 class="d3" style="margin:12px 0 10px">How it should behave</h2>
+          <p class="lead" style="font-size:var(--t-md);margin-bottom:8px">The settings that decide whether this feels like help or like being managed.</p>
+          <div class="qz" data-qid="q_14_96" data-label="Should it nag, or list quietly and let people get on with it?">
+    <label class="qlab" for="q_14_96">Should it nag, or list quietly and let people get on with it?</label><div class="chips" data-q="q_14_96"><button type="button" class="chip" aria-pressed="false" data-v="List quietly">List quietly</button><button type="button" class="chip" aria-pressed="false" data-v="Remind, but gently">Remind, but gently</button><button type="button" class="chip" aria-pressed="false" data-v="Nag — we need it">Nag — we need it</button></div></div><div class="qz" data-qid="q_14_97" data-label="Should a child see everyone’s jobs, or only their own?">
+    <label class="qlab" for="q_14_97">Should a child see everyone’s jobs, or only their own?</label><div class="chips" data-q="q_14_97"><button type="button" class="chip" aria-pressed="false" data-v="Only their own">Only their own</button><button type="button" class="chip" aria-pressed="false" data-v="Their own, plus the shared household things">Their own, plus the shared household things</button><button type="button" class="chip" aria-pressed="false" data-v="Everything">Everything</button></div></div><div class="qz" data-qid="q_14_98" data-label="Should children be able to add and edit jobs, or only tick them off?">
+    <label class="qlab" for="q_14_98">Should children be able to add and edit jobs, or only tick them off?</label><div class="chips" data-q="q_14_98"><button type="button" class="chip" aria-pressed="false" data-v="Tick only">Tick only</button><button type="button" class="chip" aria-pressed="false" data-v="Add their own, not edit others">Add their own, not edit others</button><button type="button" class="chip" aria-pressed="false" data-v="Full editing">Full editing</button></div></div><div class="qz" data-qid="q_14_99" data-label="Should an adult be able to tick on a child’s behalf?">
+    <label class="qlab" for="q_14_99">Should an adult be able to tick on a child’s behalf?</label><div class="chips" data-q="q_14_99"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_14_100" data-label="When a job is missed, should it stay overdue, roll on, or disappear?">
+    <label class="qlab" for="q_14_100">When a job is missed, should it stay overdue, roll on, or disappear?</label><div class="chips" data-q="q_14_100"><button type="button" class="chip" aria-pressed="false" data-v="Stay overdue">Stay overdue</button><button type="button" class="chip" aria-pressed="false" data-v="Roll on to the next due date">Roll on to the next due date</button><button type="button" class="chip" aria-pressed="false" data-v="Disappear">Disappear</button></div></div><div class="qz" data-qid="q_14_101" data-label="Do you want reminders and notifications? For whom, when?">
+    <label class="qlab" for="q_14_101">Do you want reminders and notifications? For whom, when?</label><input type="text" id="q_14_101" data-q="q_14_101"></div><div class="qz" data-qid="q_14_102" data-label="Phones only, or a shared screen in the kitchen too?">
+    <label class="qlab" for="q_14_102">Phones only, or a shared screen in the kitchen too?</label><div class="chips" data-q="q_14_102"><button type="button" class="chip" aria-pressed="false" data-v="Phones only">Phones only</button><button type="button" class="chip" aria-pressed="false" data-v="A shared screen too">A shared screen too</button><button type="button" class="chip" aria-pressed="false" data-v="Mostly a shared screen">Mostly a shared screen</button></div></div><div class="qz" data-qid="q_14_103" data-label="Does it need a code to open? Who gets the code?">
+    <label class="qlab" for="q_14_103">Does it need a code to open? Who gets the code?</label><input type="text" id="q_14_103" data-q="q_14_103"></div><div class="qz" data-qid="q_14_104" data-label="Does everyone need to see the same data live, or is one device enough?">
+    <label class="qlab" for="q_14_104">Does everyone need to see the same data live, or is one device enough?</label><div class="chips" data-q="q_14_104"><button type="button" class="chip" aria-pressed="false" data-v="Yes">Yes</button><button type="button" class="chip" aria-pressed="false" data-v="No">No</button><button type="button" class="chip" aria-pressed="false" data-v="Not sure">Not sure</button></div></div><div class="qz" data-qid="q_14_105" data-label="Does it need to feed a calendar you already use?">
+    <label class="qlab" for="q_14_105">Does it need to feed a calendar you already use?</label><input type="text" id="q_14_105" data-q="q_14_105"></div><div class="qz" data-qid="q_14_106" data-label="Is anything in here sensitive enough that it shouldn’t sit on the open internet?">
+    <label class="qlab" for="q_14_106">Is anything in here sensitive enough that it shouldn’t sit on the open internet?</label><input type="text" id="q_14_106" data-q="q_14_106"></div>
+          <div class="btns" style="margin-top:26px">
+            <button class="btn ghost" type="button" data-back>Back</button>
+            <button class="btn" type="button" data-next>Finish</button>
+            <button class="btn ghost" type="button" data-finish>Stop here and see my brief</button>
+          </div>
+        </div>
+        
+      </section>
+
+    <section class="qsec" data-sec="done" hidden>
+      <div class="tool">
+        <span class="lbl acc">Your setup brief</span>
+        <h2 class="d3" style="margin:12px 0 14px">Everything you answered, in one place</h2>
+        <p class="lead" style="font-size:var(--t-md)">Copy it, print it, or keep the tab. It is written so it can be
+        worked from directly — by you, or by us.</p>
+        <div class="btns" style="margin-top:20px">
+          <button class="btn" type="button" data-copy="#qzOut">Copy the brief</button>
+          <button class="btn ghost" type="button" onclick="window.print()">Print</button>
+          <button class="btn ghost" type="button" id="qzEdit">Go back and add more</button>
+        </div>
+        <div id="qzOut" class="brief"></div>
+        <div class="ebox dayly" style="margin-top:var(--s4)">
+          <span class="lbl">Next</span>
+          <p class="boxh">Put it into Dayly.</p>
+          <p style="color:color-mix(in srgb,var(--bg) 72%,transparent)">Setting up from this brief takes about an
+          hour, and you do not have to do it in one sitting. Free for 30 days, no card.</p>
+          <div class="btns" style="margin-top:18px">
+            <a class="btn" href="https://hemmet.onrender.com" data-cta="quiz-complete">Start with Dayly</a>
+            <a class="btn ghost" href="/dayly-site/how-it-works/">See how it works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="prose" style="margin-top:var(--s5)">
+    <h2>Three things worth agreeing before anything gets built</h2>
+    <h3>Which parts are facts, and which are guesses.</h3><p>Anything invented gets flagged as invented. Assignments, intervals and which day a job lands on are the usual culprits — a guessed answer that looks like a fact is worse than a blank.</p><h3>What you want to be true, versus what is true today.</h3><p>A rota nobody follows is worse than no rota. Start from what already happens, then change it deliberately.</p><h3>What happens when it is wrong.</h3><p>Every guess has to be changeable in one tap by the person it affects — not only by whoever set it up.</p>
+  </div>
+
+  
+  <div class="faq" style="margin-top:var(--s5)">
+    <h2 class="d3" style="margin-bottom:14px">About the quiz</h2>
+    <details><summary>How long does it take?</summary><div><p>About twenty minutes for the four essential sections, and forty-five if you answer everything. You can stop at any point — the brief includes whatever you have answered so far.</p></div></details><details><summary>Where do my answers go?</summary><div><p>Into your own browser and nowhere else. There is no account, no upload and no server involved. Clearing your browser data clears the answers, so copy the brief when you are done.</p></div></details><details><summary>Do I need to answer everything?</summary><div><p>No. Blanks are fine and honest blanks are better than guesses — the brief marks what you left, so nothing invented gets mistaken for a fact later.</p></div></details><details><summary>Can I do this with my partner?</summary><div><p>It works well done together, and it works differently done separately — particularly sections 4 and 5, where two people often have quite different ideas about who currently does what.</p></div></details><details><summary>What if my household does not fit these questions?</summary><div><p>Then answer the ones that apply and write the rest in your own words. The questions exist to surface things people forget, not to constrain what a household can be.</p></div></details>
+  </div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'dayly.quiz.v1';
+  var SEC = [{"n":1,"title":"The people","essential":true},{"n":2,"title":"When each person is here","essential":true},{"n":3,"title":"The house","essential":true},{"n":4,"title":"Who is in charge of what","essential":true},{"n":5,"title":"The daily routine","essential":false},{"n":6,"title":"Cleaning","essential":false},{"n":7,"title":"Beds, towels and laundry","essential":false},{"n":8,"title":"School and activities","essential":false},{"n":9,"title":"Food","essential":false},{"n":10,"title":"The rest of the house","essential":false},{"n":11,"title":"Health and appointments","essential":false},{"n":12,"title":"Birthdays, presents and the social calendar","essential":false},{"n":13,"title":"Trips and travel","essential":false},{"n":14,"title":"Money and motivation","essential":false},{"n":15,"title":"How it should behave","essential":false}];
+  var app = document.getElementById('qzApp'), intro = document.getElementById('qzIntro');
+  var secs = [].slice.call(document.querySelectorAll('.qsec'));
+  var total = document.querySelectorAll('.qz').length;
+  var cur = 0, data = {};
+
+  try { data = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e){ data = {}; }
+  if (Object.keys(data).length) document.getElementById('qzResume').hidden = false;
+
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(data)); } catch(e){} }
+
+  function restore(){
+    document.querySelectorAll('[data-q]').forEach(function(el){
+      var id = el.dataset.q, v = data[id];
+      if (v === undefined) return;
+      if (el.classList.contains('chips')){
+        el.querySelectorAll('.chip').forEach(function(c){ c.setAttribute('aria-pressed', c.dataset.v === v ? 'true' : 'false'); });
+      } else el.value = v;
+    });
+  }
+
+  document.querySelectorAll('input[data-q], textarea[data-q]').forEach(function(el){
+    el.addEventListener('input', function(){ data[el.dataset.q] = el.value; save(); paint(); });
+  });
+  document.querySelectorAll('.chips[data-q]').forEach(function(g){
+    g.addEventListener('click', function(e){
+      var b = e.target.closest('.chip'); if (!b) return;
+      g.querySelectorAll('.chip').forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      b.setAttribute('aria-pressed','true');
+      data[g.dataset.q] = b.dataset.v; save(); paint();
+    });
+  });
+
+  function answered(){ return Object.keys(data).filter(function(k){ return String(data[k]).trim(); }).length; }
+  function paint(){
+    var a = answered();
+    document.getElementById('qzBar').style.width = Math.round(a / total * 100) + '%';
+    document.getElementById('qzCount').textContent = a + ' of ' + total + ' answered';
+    var s = SEC[cur];
+    document.getElementById('qzWhere').textContent = s ? ('Section ' + s.n + ' · ' + s.title) : 'Your brief';
+  }
+
+  function show(i){
+    secs.forEach(function(s){ s.hidden = true; });
+    if (i === 'done'){ secs[secs.length-1].hidden = false; build(); }
+    else { secs[i].hidden = false; cur = i; }
+    paint();
+    app.scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  function build(){
+    var out = [], any = false;
+    document.querySelectorAll('.qsec[data-sec]').forEach(function(sec){
+      var i = sec.dataset.sec; if (i === 'done') return;
+      var meta = SEC[+i], lines = [];
+      sec.querySelectorAll('.qz').forEach(function(qz){
+        var v = data[qz.dataset.qid];
+        if (v && String(v).trim()) lines.push([qz.dataset.label, String(v).trim()]);
+      });
+      if (!lines.length) return;
+      any = true;
+      out.push('<h3>' + meta.n + '. ' + meta.title + '</h3>');
+      out.push('<dl>' + lines.map(function(l){
+        return '<dt>' + l[0] + '</dt><dd>' + l[1].replace(/[<>&]/g, function(c){ return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c]; }).replace(/\n/g,'<br>') + '</dd>';
+      }).join('') + '</dl>');
+    });
+    var blanks = total - answered();
+    if (blanks) out.push('<p class="dim" style="font-size:var(--t-sm)"><strong>' + blanks + ' questions left blank.</strong> ' +
+      'That is fine — but say so when you set up, rather than letting a default look like a decision.</p>');
+    document.getElementById('qzOut').innerHTML = any ? out.join('')
+      : '<p class="dim">Nothing answered yet. Go back and fill in whatever you can — even four or five lines is a useful start.</p>';
+  }
+
+  document.getElementById('qzStart').addEventListener('click', function(){
+    intro.hidden = true; app.hidden = false; restore(); show(0);
+    if (window.daylyTrack) window.daylyTrack('quiz_start', {});
+  });
+  document.getElementById('qzResume').addEventListener('click', function(){
+    intro.hidden = true; app.hidden = false; restore(); show(0);
+  });
+  document.getElementById('qzEdit').addEventListener('click', function(){ show(0); });
+
+  secs.forEach(function(sec, i){
+    var b = sec.querySelector('[data-back]'), n = sec.querySelector('[data-next]'), f = sec.querySelector('[data-finish]');
+    if (b) b.addEventListener('click', function(){ show(Math.max(0, i-1)); });
+    if (n) n.addEventListener('click', function(){
+      if (i >= SEC.length - 1){ show('done'); if (window.daylyTrack) window.daylyTrack('quiz_complete', { answered: answered() }); }
+      else show(i+1);
+    });
+    if (f) f.addEventListener('click', function(){
+      show('done');
+      if (window.daylyTrack) window.daylyTrack('quiz_complete', { answered: answered(), stoppedAt: i+1 });
+    });
+  });
+})();
+</script></main>
+<footer class="foot"><div class="wrap">
+    <div class="footgrid">
+      <div>
+        <a class="logo" href="/dayly-site/" style="margin-bottom:14px"><svg class="mk" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1" y="3.5" width="24" height="21" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M1 9.5h24" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 1v5M18.5 1v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="13" cy="17" r="3.4" fill="var(--acc)"/></svg> Dayly</a>
+        <p class="dim" style="font-size:var(--t-sm);max-width:30ch">Family life in one place — and children who gradually learn to run their own.</p>
+        <div class="btns" style="margin-top:20px"><a class="btn sm" href="https://hemmet.onrender.com" data-cta="footer-try">Try Dayly</a></div>
+      </div>
+      <div><h2 class="fcol">Product</h2><ul><li><a href="/dayly-site/how-it-works/">How it works</a></li><li><a href="/dayly-site/features/">Features</a></li><li><a href="/dayly-site/quiz/">The setup quiz</a></li><li><a href="/dayly-site/for-parents/">For parents</a></li><li><a href="/dayly-site/for-kids/">For kids</a></li><li><a href="/dayly-site/teen-organisation/">For teens</a></li><li><a href="/dayly-site/pricing/">Pricing</a></li></ul></div><div><h2 class="fcol">The Guide</h2><ul><li><a href="/dayly-site/guide/">All articles</a></li><li><a href="/dayly-site/guide/mental-load/">Mental load</a></li><li><a href="/dayly-site/guide/responsibility/">Responsibility</a></li><li><a href="/dayly-site/guide/homework/">Homework</a></li><li><a href="/dayly-site/guide/routines/">Routines</a></li><li><a href="/dayly-site/guide/travel/">Travel</a></li></ul></div><div><h2 class="fcol">Free tools</h2><ul><li><a href="/dayly-site/tools/mental-load-calculator/">Mental load calculator</a></li><li><a href="/dayly-site/tools/responsibility-generator/">Responsibility generator</a></li><li><a href="/dayly-site/tools/chore-generator/">Chore generator</a></li><li><a href="/dayly-site/tools/packing-list-generator/">Packing list generator</a></li><li><a href="/dayly-site/tools/homework-planner/">Homework planner</a></li><li><a href="/dayly-site/starter-kit/">Starter kit</a></li></ul></div><div><h2 class="fcol">Company</h2><ul><li><a href="/dayly-site/about/">About Dayly</a></li><li><a href="/dayly-site/trust/">Trust &amp; safety</a></li><li><a href="/dayly-site/privacy/">Privacy</a></li><li><a href="/dayly-site/privacy/children/">Children’s data</a></li><li><a href="/dayly-site/terms/">Terms</a></li><li><a href="/dayly-site/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="footbot">
+      <span>© 2026 Dayly</span>
+      <span>Made for families, in Sweden.</span>
+      <a href="/dayly-site/affiliate-disclosure/">Affiliate disclosure</a>
+      <a href="/dayly-site/editorial-policy/">Editorial policy</a>
+      <a href="/dayly-site/sitemap.xml">Sitemap</a>
+    </div>
+  </div></footer>
+<div class="stickycta" id="scta" hidden>
+    <p>Put this into practice — free for 30 days.</p>
+    <a class="btn sm" href="https://hemmet.onrender.com" data-cta="sticky">Try Dayly</a>
+    <button class="x" aria-label="Dismiss" onclick="document.getElementById('scta').remove();try{localStorage.setItem('dayly.scta','1')}catch(e){}">×</button>
+  </div>
+<script src="/dayly-site/site.js" defer></script>
+</body>
+</html>

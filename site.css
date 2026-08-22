@@ -736,8 +736,17 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 .sr-none{margin-top:26px;font-size:var(--t-md);color:var(--mut)}
 
 /* Review marker: which Guide articles have been rewritten to the benchmark voice.
-   Temporary. Remove this block, the `fresh` flags in content/articles/*.mjs and the
-   is-fresh line in content/guide.mjs once the rework is finished. */
-.acard.is-fresh{border-left:3px solid var(--ok);padding-left:17px}
-.freshdot{display:inline-block;margin-left:8px;padding:2px 7px;border-radius:2px;
-  background:var(--ok-soft);color:var(--ok);font-weight:600;letter-spacing:.08em}
+   Temporary, and deliberately loud — the first version used a thin rule and a pale
+   label, which is fine as decoration and useless for scanning a page of seventy-five
+   cards. Scanning needs contrast, so the rewritten ones are lifted and everything else
+   is faded back until you look at it.
+   Remove this block, the `fresh` flags in content/articles/*.mjs and the is-fresh line
+   in content/guide.mjs once the rework is finished. */
+.acard.is-fresh{border-left:4px solid var(--ok);padding-left:16px;background:var(--ok-soft)}
+.acard.is-fresh h3{color:var(--ink)}
+.freshdot{display:inline-block;margin-left:8px;padding:3px 8px;border-radius:2px;
+  background:var(--ok);color:var(--bg);font-weight:700;letter-spacing:.1em}
+/* Everything not yet done recedes. Full strength on hover, so it is still readable. */
+.acard:not(.is-fresh){opacity:.42;transition:opacity .15s}
+.acard:not(.is-fresh):hover,.acard:not(.is-fresh):focus-visible{opacity:1}
+@media (prefers-reduced-motion:reduce){.acard:not(.is-fresh){transition:none}}

@@ -734,3 +734,10 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 .sr-x{display:block;font-size:var(--t-body);color:var(--mut);line-height:1.5}
 .sr-x mark{background:var(--acc-soft);color:var(--ink);padding:0 1px}
 .sr-none{margin-top:26px;font-size:var(--t-md);color:var(--mut)}
+
+/* Review marker: which Guide articles have been rewritten to the benchmark voice.
+   Temporary. Remove this block, the `fresh` flags in content/articles/*.mjs and the
+   is-fresh line in content/guide.mjs once the rework is finished. */
+.acard.is-fresh{border-left:3px solid var(--ok);padding-left:17px}
+.freshdot{display:inline-block;margin-left:8px;padding:2px 7px;border-radius:2px;
+  background:var(--ok-soft);color:var(--ok);font-weight:600;letter-spacing:.08em}

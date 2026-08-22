@@ -758,3 +758,16 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 .acard.is-stale{opacity:.42;transition:opacity .15s}
 .acard.is-stale:hover,.acard.is-stale:focus-visible{opacity:1}
 @media (prefers-reduced-motion:reduce){.acard.is-stale{transition:none}}
+
+/* Flat article index — /guide/all/ */
+.ilist{margin-bottom:var(--s4)}
+.ilist h2{display:flex;align-items:baseline;gap:10px;padding-bottom:8px;
+  border-bottom:1px solid var(--line);margin-bottom:2px}
+.ilist h2 a{color:var(--ink)}
+.ilist h2 span{color:var(--mut2);font-weight:400}
+.ilist ul{list-style:none;margin:0;padding:0;
+  columns:2;column-gap:var(--s4)}
+.ilist li{break-inside:avoid;padding:7px 0;border-bottom:1px solid var(--line-soft,var(--line))}
+.ilist li a{color:var(--ink);font-size:var(--t-body)}
+.ilist li a:hover{color:var(--acc)}
+@media (max-width:760px){.ilist ul{columns:1}}

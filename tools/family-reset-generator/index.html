@@ -95,7 +95,8 @@
   <div class="field"><span class="lbl">Who is doing it?</span>
     <div class="chips" id="rsP">
       <button type="button" class="chip" aria-pressed="false" data-v="adults">Adults only</button>
-      <button type="button" class="chip" aria-pressed="false" data-v="all">Everyone, including the children</button>
+      <button type="button" class="chip" aria-pressed="false" data-v="older">The older children too</button>
+      <button type="button" class="chip" aria-pressed="false" data-v="all">Everyone, including the little ones</button>
     </div></div>
   <div class="btns"><button class="btn" type="button" id="rsGo">Build the resets</button>
     <button class="btn ghost" type="button" onclick="window.print()">Print</button></div>
@@ -108,9 +109,14 @@
     document.querySelectorAll('#'+id+' .chip').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
     b.setAttribute('aria-pressed','true'); set(b.dataset.v); }); }); }
   pick('rsD', function(v){ d=parseInt(v,10); }); pick('rsW', function(v){ w=parseInt(v,10); }); pick('rsP', function(v){ who=v; });
+  /* Three tiers, because the question offers three answers and two of them used to
+     produce the same list.
+       adults — needs an adult
+       older  — a child of about eight and up can own it
+       all    — a four-year-old can do it, slowly */
   var DAILY = [
-    ['Check tomorrow — what is on and what it needs', 2, 'all'],
-    ['Bags packed and by the door', 2, 'all'],
+    ['Check tomorrow — what is on and what it needs', 2, 'older'],
+    ['Bags packed and by the door', 2, 'older'],
     ['Uniform and kit out', 1, 'all'],
     ['Five-minute tidy of the shared rooms', 5, 'all'],
     ['Kitchen reset — surfaces clear, dishwasher on', 4, 'adults'],
@@ -118,13 +124,13 @@
     ['Washing on or moved over', 3, 'adults']
   ];
   var WEEKLY = [
-    ['Look at the week — every commitment, every person', 10, 'all'],
+    ['Look at the week — every commitment, every person', 10, 'older'],
     ['Find the two points where it does not work, and solve those', 5, 'adults'],
-    ['Kit and clothes for the week: is it clean, and is it here?', 5, 'all'],
+    ['Kit and clothes for the week: is it clean, and is it here?', 5, 'older'],
     ['Meals for the week and the shopping that needs', 10, 'adults'],
     ['Whole-family reset of the shared rooms', 10, 'all'],
     ['Each person resets their own area', 10, 'all'],
-    ['Bins, recycling, bedding', 8, 'all'],
+    ['Bins, recycling, bedding', 8, 'older'],
     ['Tell everyone what is coming — including the difficult evening', 2, 'all']
   ];
   var MONTHLY = [
@@ -135,10 +141,20 @@
     'Check passports and anything else that expires',
     'Reallocate an area if somebody has had it long enough'
   ];
+  /* The filter here used to end in "|| true", which makes the whole condition true
+     whatever the arguments are, and it was followed by an if-block with an empty body.
+     So the "who is doing it?" question changed one sentence of prose and nothing else —
+     a control that looks like it does something and does not.
+     (This comment is inside a template literal, so it must not contain a backtick.)
+     Now the third column means what it says: 'all' is a line children can genuinely take
+     on, 'adults' is one they cannot. Answer "adults only" and the children's lines drop
+     out, which leaves room in the same budget for more of the adults' ones. */
   function fit(list, budget){
     var out = [], t = 0;
-    list.filter(function(i){ return who === 'all' || i[2] !== 'all' || true; }).forEach(function(i){
-      if (who === 'adults' && i[2] === 'all' && i[0].indexOf('Bags') === 0) { }
+    var allow = who === 'adults' ? ['adults']
+              : who === 'older'  ? ['adults','older']
+              : ['adults','older','all'];
+    list.filter(function(i){ return allow.indexOf(i[2]) > -1; }).forEach(function(i){
       if (t + i[1] <= budget){ out.push(i); t += i[1]; }
     });
     return out;
@@ -151,7 +167,7 @@
       '<h2 class="d3" style="margin:12px 0 6px">Daily — ' + d + ' minutes, after dinner</h2>' +
       '<p class="dim" style="font-size:var(--t-body);margin-bottom:12px">Attach it to something that already happens. Preparation before free time, always — reversing it means stopping something enjoyable, which is a fight every night.</p>' + rows(daily) +
       '<h2 class="d3" style="margin:32px 0 6px">Weekly — ' + w + ' minutes, same slot each week</h2>' +
-      '<p class="dim" style="font-size:var(--t-body);margin-bottom:12px">' + (who === 'all' ? 'With the children in the room, not done for them. Children who see the week understand why Wednesday is rushed.' : 'Both adults, together, so neither becomes the archive.') + '</p>' + rows(weekly) +
+      '<p class="dim" style="font-size:var(--t-body);margin-bottom:12px">' + (who === 'adults' ? 'Both adults, together, so neither becomes the archive.' : who === 'older' ? 'With the older ones in the room, not done for them. A child who sees the week understands why Wednesday is rushed.' : 'Everyone in the room, including the small ones. They will not follow all of it, and being there is the point.') + '</p>' + rows(weekly) +
       '<h2 class="d3" style="margin:32px 0 6px">Monthly — fifteen minutes</h2><div class="outlist">' +
       MONTHLY.map(function(t){ return '<div class="drow"><span class="box">✓</span><span class="gr"><span class="t">'+t+'</span></span></div>'; }).join('') + '</div>' +
       '<div class="ebox try" style="margin-top:26px"><span class="lbl">Make it survive a bad week</span>' +

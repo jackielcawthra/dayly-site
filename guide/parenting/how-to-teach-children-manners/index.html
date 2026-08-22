@@ -161,7 +161,13 @@
     <aside class="aside">
       <nav class="toc" aria-label="On this page">
         <span class="lbl">On this page</span>
-        <ol><li><a href="#what-actually-teaches-them">What actually teaches them</a></li><li><a href="#by-age">By age</a></li><li><a href="#what-does-not-work">What does not work</a></li><li><a href="#the-thank-you-note">The thank-you note</a></li></ol>
+        <!-- A list, not an ordered list. The numerals were doing nothing except making
+             five claims look like five form fields, and the headings are the argument in
+             order — they do not need counting. -->
+        <ul>
+          <span class="toc-progress" aria-hidden="true"><i></i></span>
+          <li><a href="#what-actually-teaches-them">What actually teaches them</a></li><li><a href="#by-age">By age</a></li><li><a href="#what-does-not-work">What does not work</a></li><li><a href="#the-thank-you-note">The thank-you note</a></li>
+        </ul>
       </nav>
       <div class="card pad-sm">
         <span class="lbl">Free tool</span>

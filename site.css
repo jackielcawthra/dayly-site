@@ -354,11 +354,34 @@ blockquote.pull cite{display:block;font-family:var(--sans);font-size:var(--t-sm)
 .qa{border-left:2px solid var(--acc);padding:4px 0 4px 22px;margin:var(--s4) 0}
 .qa .lbl{display:block;margin-bottom:9px;color:var(--acc)}
 .qa p{font-family:var(--serif);font-size:clamp(1.15rem,1.05rem + .6vw,1.4rem);line-height:1.38;letter-spacing:-.012em}
-.toc{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;background:var(--paper)}
-.toc ol{margin:10px 0 0;padding-left:1.1em}
-.toc li{margin-top:.4em;font-size:var(--t-body)}
-.toc a{color:var(--ink2)}
-.toc a:hover{color:var(--acc)}
+/* On this page.
+   Was a bordered box of numbered links, which read as a form and — with no sticky
+   position and no active state — stopped being useful after the first screenful.
+   What newspapers and documentation sites do instead is make it a map: a rail down the
+   side, the section you are actually in picked out, and the thing pinned so it travels
+   with you. The numerals go, because the headings are already in order and counting them
+   adds nothing. */
+.toc{position:sticky;top:96px;border:0;padding:0;background:none}
+.toc ul{list-style:none;margin:14px 0 0;padding:0;
+  /* The rail. One hairline the whole height, with the active segment drawn over it. */
+  border-left:1px solid var(--line)}
+.toc li{margin:0;font-size:var(--t-body);line-height:1.35}
+.toc a{display:block;padding:9px 0 9px 16px;margin-left:-1px;color:var(--mut);
+  border-left:2px solid transparent;transition:color .18s,border-color .18s}
+.toc a:hover{color:var(--ink)}
+.toc a[aria-current]{color:var(--ink);font-weight:500;border-left-color:var(--acc)}
+/* How far through — drawn on the rail itself rather than as a separate bar.
+   As its own element under the list it read as a divider before the next card, which is
+   one more line on a page that does not need one. On the rail it answers the question
+   without adding anything: the hairline fills as you read. */
+.toc ul{position:relative}
+.toc-progress{position:absolute;left:-1px;top:0;bottom:0;width:1px;margin:0;
+  pointer-events:none}
+.toc-progress i{display:block;width:1px;height:0;background:var(--acc);opacity:.55;
+  transition:height .12s linear}
+@media (prefers-reduced-motion:reduce){
+  .toc a,.toc-progress i{transition:none}
+}
 .artlayout{display:grid;gap:var(--s5)}
 @media (min-width:1060px){.artlayout{grid-template-columns:1fr 250px;align-items:start}
   .aside{position:sticky;top:88px;display:grid;gap:22px}}

@@ -72,4 +72,71 @@
       }).catch(function(){});
     });
   });
+
+  /* ---- on this page: which section am I actually in
+   *
+   * A list of links tells you what is coming. It does not tell you where you are, and a
+   * table of contents that cannot answer that is decoration.
+   *
+   * The first version used an IntersectionObserver with a narrow rootMargin, which is the
+   * efficient way to do this and did not work: the callback only runs when a heading
+   * crosses the band, so a jump-scroll that skips the band leaves the marker wherever it
+   * was. It failed silently, which is the worst way for a decoration to fail.
+   *
+   * This reads five rectangles on scroll instead, throttled to one animation frame. That
+   * is a few microseconds on a page whose whole job is to sit still and be read, and it
+   * is correct at every scroll position including the ones nobody scrolled through.
+   */
+  (function(){
+    var toc = document.querySelector('.toc');
+    if (!toc) return;
+
+    var links = [].slice.call(toc.querySelectorAll('a'));
+    var bar = toc.querySelector('.toc-progress i');
+    var article = document.querySelector('article');
+    var sections = links.map(function(a){
+      try { return document.getElementById(decodeURIComponent(a.hash.slice(1))); }
+      catch (e) { return null; }
+    });
+    if (!links.length || sections.indexOf(null) > -1) return;
+
+    var current = -1, queued = false;
+
+    function update(){
+      queued = false;
+
+      /* The heading you are "in" is the last one whose top has passed the line. The line
+         sits below the sticky header rather than at the very top, or a heading counts as
+         current while it is still under the bar and out of sight. */
+      var line = 140, i = -1;
+      for (var n = 0; n < sections.length; n++) {
+        if (sections[n].getBoundingClientRect().top <= line) i = n; else break;
+      }
+      if (i !== current) {
+        current = i;
+        for (var k = 0; k < links.length; k++) {
+          if (k === i) links[k].setAttribute('aria-current', 'true');
+          else links[k].removeAttribute('aria-current');
+        }
+      }
+
+      if (bar && article) {
+        var r = article.getBoundingClientRect();
+        var total = r.height - window.innerHeight;
+        var done = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 0;
+        bar.style.height = (done * 100).toFixed(1) + '%';
+      }
+    }
+
+    function onScroll(){
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(update);
+    }
+
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll, { passive: true });
+    update();
+  })();
+
 })();

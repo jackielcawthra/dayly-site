@@ -175,7 +175,13 @@
     <aside class="aside">
       <nav class="toc" aria-label="On this page">
         <span class="lbl">On this page</span>
-        <ol><li><a href="#school-and-childcare">School and childcare</a></li><li><a href="#clubs-sport-and-activities">Clubs, sport and activities</a></li><li><a href="#food">Food</a></li><li><a href="#health">Health</a></li><li><a href="#home">Home</a></li><li><a href="#social-and-family">Social and family</a></li><li><a href="#travel">Travel</a></li><li><a href="#the-children-themselves">The children themselves</a></li><li><a href="#what-to-do-with-the-result">What to do with the result</a></li></ol>
+        <!-- A list, not an ordered list. The numerals were doing nothing except making
+             five claims look like five form fields, and the headings are the argument in
+             order — they do not need counting. -->
+        <ul>
+          <span class="toc-progress" aria-hidden="true"><i></i></span>
+          <li><a href="#school-and-childcare">School and childcare</a></li><li><a href="#clubs-sport-and-activities">Clubs, sport and activities</a></li><li><a href="#food">Food</a></li><li><a href="#health">Health</a></li><li><a href="#home">Home</a></li><li><a href="#social-and-family">Social and family</a></li><li><a href="#travel">Travel</a></li><li><a href="#the-children-themselves">The children themselves</a></li><li><a href="#what-to-do-with-the-result">What to do with the result</a></li>
+        </ul>
       </nav>
       <div class="card pad-sm">
         <span class="lbl">Free tool</span>

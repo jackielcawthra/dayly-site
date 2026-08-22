@@ -752,6 +752,6 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 .freshdot{display:inline-block;margin-left:8px;padding:3px 8px;border-radius:2px;
   background:var(--ok);color:var(--bg);font-weight:700;letter-spacing:.1em}
 /* Everything not yet done recedes. Full strength on hover, so it is still readable. */
-.acard:not(.is-fresh){opacity:.42;transition:opacity .15s}
-.acard:not(.is-fresh):hover,.acard:not(.is-fresh):focus-visible{opacity:1}
-@media (prefers-reduced-motion:reduce){.acard:not(.is-fresh){transition:none}}
+.acard.is-stale{opacity:.42;transition:opacity .15s}
+.acard.is-stale:hover,.acard.is-stale:focus-visible{opacity:1}
+@media (prefers-reduced-motion:reduce){.acard.is-stale{transition:none}}

@@ -151,6 +151,9 @@ hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0}
   background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px;
   display:none;grid-template-columns:1fr 1fr;gap:4px 22px;box-shadow:none}
 .has-menu:hover .menu,.has-menu:focus-within .menu{display:grid}
+/* The panel hangs 10px below the trigger. Without a bridge across that gap the
+   pointer leaves :hover on the way down and the menu closes under the cursor. */
+.menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
 .menu .mhead{grid-column:1/-1;margin-bottom:6px}
 .menu a{display:block;padding:7px 9px;font-size:var(--t-sm);border-radius:var(--r)}
 .menu a small{display:block;color:var(--mut2);font-size:var(--t-label);line-height:1.35}

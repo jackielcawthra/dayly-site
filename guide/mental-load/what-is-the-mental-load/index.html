@@ -75,7 +75,11 @@
     <nav class="crumbs" aria-label="Breadcrumb"><span><a href="/dayly-site/">Home</a></span><span><a href="/dayly-site/guide/">The Dayly Guide</a></span><span><a href="/dayly-site/guide/mental-load/">Mental Load</a></span><span aria-current="page" style="color:var(--mut)">What is the mental load?</span></nav>
     <span class="lbl acc" style="display:block;margin-bottom:18px">Mental Load</span>
     <h1 class="d2" style="margin-bottom:22px">What is the mental load?</h1>
-    <p class="lead">The dentist texted three weeks ago. You saw the message, thought I must remember that, and somehow you still have not booked it.</p>
+    <!-- inline() rather than esc(): the standfirst is usually a sentence lifted from the
+         article, and it should look the same in both places. Emphasis in the body and
+         none in the lead reads as a mistake, because it is one. Still escaped — inline()
+         escapes first and then renders the small set of marks it allows. -->
+    <p class="lead">The dentist texted three weeks ago. You saw the message, thought <em>I must remember that</em>, and somehow you still haven’t booked it.</p>
     <div class="byline">
       <span class="who"><b>The Dayly Editors</b></span>
       <span>Published 4 March 2026</span>

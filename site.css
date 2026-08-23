@@ -783,3 +783,50 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 .ftile{border-top:2px solid var(--ink);padding-top:18px}
 .ftile h2{margin:0 0 12px}
 .ftile p{color:var(--mut);max-width:34rem}
+
+/* ── Hero animation ────────────────────────────────────────────────────────
+   A forwarded newsletter, its lines picked out one at a time, each landing on
+   the right as a dated row. One 16s loop. Nothing here is an image or a video:
+   it stays sharp at any size, adds no weight and makes no request. */
+.hmot{display:grid;grid-template-columns:1fr 32px 1fr;gap:0 14px;align-items:center;
+  font-size:var(--t-sm);line-height:1.5}
+.hpaper{background:var(--paper);color:var(--ink);padding:18px 16px;min-height:210px;
+  border:1px solid rgba(0,0,0,.12)}
+.hfrom{display:block;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mut2);margin-bottom:14px}
+.hline{display:block;margin-bottom:11px;position:relative;color:var(--mut);
+  animation:hpick 16s calc(var(--i) * 1.6s) infinite}
+.hline::after{content:"";position:absolute;inset:-3px -5px;background:var(--acc);opacity:0;
+  mix-blend-mode:multiply;animation:hsweep 16s calc(var(--i) * 1.6s) infinite}
+.harrow{color:var(--acc);opacity:.5;display:flex;justify-content:center}
+.hplan{display:flex;flex-direction:column;gap:7px}
+.hrow{display:grid;grid-template-columns:74px 1fr auto;gap:10px;align-items:baseline;
+  background:var(--paper);color:var(--ink);padding:10px 12px;border-left:3px solid var(--acc);
+  opacity:0;transform:translateY(6px);
+  animation:hland 16s calc(var(--i) * 1.6s + .55s) infinite}
+.hday{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut2);font-weight:500}
+.htxt{font-style:normal}
+.hwho{font-style:normal;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+  padding:2px 7px;background:var(--ok-soft);color:var(--ink)}
+.hwho.due,.hwho.warn{background:rgba(0,0,0,.07)}
+
+@keyframes hsweep{
+  0%,2%{opacity:0} 4%,7%{opacity:.28} 10%,100%{opacity:0} }
+@keyframes hpick{
+  0%,3%{color:var(--mut)} 6%,40%{color:var(--ink)} 44%,100%{color:var(--mut)} }
+@keyframes hland{
+  0%{opacity:0;transform:translateY(6px)}
+  4%{opacity:1;transform:translateY(0)}
+  40%{opacity:1;transform:translateY(0)}
+  46%,100%{opacity:1;transform:translateY(0)} }
+
+@media (max-width:860px){
+  .hmot{grid-template-columns:1fr;gap:14px}
+  .harrow{transform:rotate(90deg);opacity:.35}
+}
+/* No motion: show the finished state, which is the point of the picture anyway. */
+@media (prefers-reduced-motion:reduce){
+  .hline,.hline::after,.hrow{animation:none}
+  .hline{color:var(--ink)} .hline::after{opacity:0}
+  .hrow{opacity:1;transform:none}
+}

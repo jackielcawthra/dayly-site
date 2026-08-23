@@ -778,3 +778,8 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 /* The closing beat of the hero — a statement, not body copy. */
 .herokick{max-width:33rem;margin-top:22px;font-size:var(--t-md);color:var(--ink);font-weight:500}
 .hero-film .herokick,.hero-panel .herokick{color:inherit}
+
+/* Feature tiles — /features/ */
+.ftile{border-top:2px solid var(--ink);padding-top:18px}
+.ftile h2{margin:10px 0 12px}
+.ftile p{color:var(--mut);max-width:34rem}

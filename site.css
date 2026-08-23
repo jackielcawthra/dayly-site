@@ -774,3 +774,7 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 .ilist.is-draft h2{color:var(--mut2)}
 .ilist.is-draft li a{color:var(--mut2)}
 .ilist.is-draft li a:hover{color:var(--ink)}
+
+/* The closing beat of the hero — a statement, not body copy. */
+.herokick{max-width:33rem;margin-top:22px;font-size:var(--t-md);color:var(--ink);font-weight:500}
+.hero-film .herokick,.hero-panel .herokick{color:inherit}

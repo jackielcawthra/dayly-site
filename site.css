@@ -781,5 +781,5 @@ h2.lbl,h3.lbl{font-family:var(--sans);letter-spacing:.15em;font-size:var(--t-lab
 
 /* Feature tiles — /features/ */
 .ftile{border-top:2px solid var(--ink);padding-top:18px}
-.ftile h2{margin:10px 0 12px}
+.ftile h2{margin:0 0 12px}
 .ftile p{color:var(--mut);max-width:34rem}
